@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<link href="styles/dangnhapsau.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+	
+	<h1>Chào mừng bạn 🎉</h1>
+<button onclick="logout()">Đăng xuất</button>
+
+<script>
+    // nếu chưa login thì đá về login
+    if(localStorage.getItem("login") !== "true"){
+        window.location.href = "taikhoan.html";
+    }
+
+    function logout(){
+        localStorage.removeItem("login");
+        window.location.href = "taikhoan.html";
+    }
+	
+</script>
+</body>
+</html>

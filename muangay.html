@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+
+<link href="styles/dinhdang10.css" type="text/css" rel="stylesheet">
+<script src="scripst/taitrangip.js" defer></script>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- GIAO HANG -->
+    <div class="box">
+        <h3>Giao tận nơi</h3>
+        <p>&nbsp;</p>
+        <p>📍 Thành phố Hồ Chí Minh</p>
+    </div>
+
+    <!-- SAN PHAM -->
+    <div class="box sanpham">
+
+        <img id="hinhsp">
+
+        <div class="info">
+
+            <h4 id="tensp"></h4>
+
+            <p class="gia" id="giasp"></p>
+
+            <div class="soluong">
+                <button>-</button>
+                <span>1</span>
+                <button>+</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- YEU CAU -->
+    <div class="box">
+        <h4>Yêu cầu đặc biệt</h4>
+
+        <label>
+            <input type="checkbox">
+            Chuyển danh bạ
+        </label>
+
+        <label>
+            <input type="checkbox">
+            Xuất hóa đơn
+        </label>
+    </div>
+
+    <!-- TONG TIEN -->
+    <div class="box tong">
+        <p>Tổng tiền</p>
+        <h2 id="tongtien"></h2>
+    </div>
+
+    <!-- THANH TOAN -->
+    <div class="box">
+
+        <h4>Hình thức thanh toán</h4>
+
+        <label>
+            <input type="radio" name="pay">
+            Ví điện tử
+        </label>
+
+        <label>
+            <input type="radio" name="pay">
+            Chuyển khoản
+        </label>
+
+        <label>
+            <input type="radio" name="pay">
+            Tiền mặt
+        </label>
+
+    </div>
+
+    <!-- BUTTON -->
+   <button class="dathang" onclick="dathang()">Đặt hàng</button>
+
+</div>
+
+<script>
+
+let ten = localStorage.getItem("tenSP");
+let gia = Number(localStorage.getItem("giaSP"));
+let hinh = localStorage.getItem("hinhSP");
+
+document.getElementById("tensp").innerHTML = ten;
+document.getElementById("hinhsp").src = hinh;
+
+let soluong = 1;
+
+let spansl = document.querySelector(".soluong span");
+let buttons = document.querySelectorAll(".soluong button");
+
+function capnhat(){
+
+    spansl.innerHTML = soluong;
+
+    let tong = gia * soluong;
+
+    document.getElementById("giasp").innerHTML =
+    tong.toLocaleString('vi-VN') + "đ";
+
+    document.getElementById("tongtien").innerHTML =
+    tong.toLocaleString('vi-VN') + "đ";
+}
+
+capnhat();
+
+buttons[0].onclick = function(){
+    if(soluong > 1){
+        soluong--;
+        capnhat();
+    }
+}
+
+buttons[1].onclick = function(){
+    soluong++;
+    capnhat();
+}
+
+// CHUYỂN TRANG KHI ĐẶT HÀNG
+function dathang() {
+    localStorage.setItem("soLuong", soluong);
+    window.location.href = "daathangthanhcong.html";
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>DANH SÁCH SẢN PHẨM</title>
+    <link href="styles/dinhdang2.css" rel="stylesheet" type="text/css">
+    <script src="scripst/taitrangip.js" defer></script>
+</head>
+<body>
+
+<div class="header">
+    <div class="logo">
+        <img src="image/ChatGPT Image 15_22_17 14 thg 5, 2026.png" alt="Logo">
+        <span>LKH STORE</span>
+    </div>
+
+    <div class="search-bar">
+        <input type="text" id="search" placeholder="Tìm kiếm sản phẩm...">
+        <button onclick="timkiem()">Tìm</button>
+    </div>
+
+    <div class="header-right">
+        <div id="userState">
+            <a href="taikhoan.html" style="color: white; text-decoration: none; font-weight: bold;">👤 Tài khoản</a>
+        </div>
+        <div class="giohang" onclick="window.location.href='giohang.html'">🛒</div>
+    </div>
+</div>
+
+<div class="main">
+    <div class="left">
+       <h3>Danh Mục</h3>
+
+        <ul class="menu-left">
+            <li class="has-sub">
+                <a href="index.html">
+                    <strong>🏠 Trang chủ</strong>
+                </a>
+                <ul class="submenu">
+                    <li><a href="khuyenmai.html">🔥 Khuyến mãi hôm nay</a></li>
+                    <li><a href="#">⭐ Sản phẩm nổi bật</a></li>
+                </ul>
+            </li>
+
+            <li class="has-sub">
+                <a href="sanpham.html"><strong>📱 Sản phẩm</strong></a>
+                <ul class="submenu">
+                    <li><a href="iphone.html">iPhone</a></li>
+                    <li><a href="samsung.html">Samsung</a></li>
+                    <li><a href="xiaomi.html">Xiaomi</a></li>
+                    <li><a href="oppo.html">Oppo</a></li>
+                    <li><a href="vivo.html">Vivo</a></li>
+                </ul>
+            </li>
+            <li class="has-sub">
+                <a href="#"><strong>🎧 Phụ kiện</strong></a>
+                <ul class="submenu">
+                    <li><a href="#">Tai nghe</a></li>
+                    <li><a href="#">Sạc nhanh</a></li>
+                </ul>
+            </li>
+        </ul>
+        <p><a href="taikhoan.html" class="btn-account">👤 Tài khoản</a></p>
+    </div>
+
+    <div class="right">
+        <div class="banner" style="background: linear-gradient(45deg, #e53935, #9c27b0);">
+            <marquee behavior="scroll" direction="left" scrollamount="5">
+                ⚡ SẢN PHẨM CHÍNH HÃNG - CẤU HÌNH KHỦNG - GIÁ TỐT NHẤT THỊ TRƯỜNG ⚡
+            </marquee>
+        </div>
+
+        <h2 style="margin-bottom: 20px; color: #333; border-left: 5px solid #ff9800; padding-left: 10px;">
+            Danh Sách Điện Thoại Mới Cập Nhật
+        </h2>
+
+        <div class="products">
+            
+            <div class="card">
+                <img src="image/iphone_16.webp" alt="iPhone 16">
+                <h3>iPhone 16 Thường</h3>
+                <p class="rating">⭐⭐⭐⭐⭐ (120 đánh giá)</p>
+                <p class="old">24.990.000đ</p>
+                <p class="new">21.500.000đ</p>
+                <button onclick="muahang('iPhone 16 Thường', '21.500.000đ', 'image/iphone16.webp')">Mua ngay</button>
+                <button class="btn-add-cart" onclick="themvaogio('iPhone 16 Thường', '21.500.000đ', 'image/iphone16.webp')">Thêm vào giỏ hàng</button>
+            </div>
+
+            <div class="card">
+                <img src="image/samsung a55.jpg" alt="Samsung A55">
+                <h3>Samsung Galaxy A55</h3>
+                <p class="rating">⭐⭐⭐⭐☆ (85 đánh giá)</p>
+                <p class="old">11.990.000đ</p>
+                <p class="new">9.890.000đ</p>
+                <button onclick="muahang('Samsung Galaxy A55', '9.890.000đ', 'image/samsung_a55.webp')">Mua ngay</button>
+                <button class="btn-add-cart" onclick="themvaogio('Samsung Galaxy A55', '9.890.000đ', 'image/samsung_a55.webp')">Thêm vào giỏ hàng</button>
+            </div>
+
+            <div class="card">
+                <img src="image/Oppo-reno-11.jpg" alt="Oppo Reno 11">
+                <h3>Oppo Reno11 5G</h3>
+                <p class="rating">⭐⭐⭐⭐☆ (43 đánh giá)</p>
+                <p class="old">10.990.000đ</p>
+                <p class="new">8.490.000đ</p>
+                <button onclick="muahang('Oppo Reno11 5G', '8.490.000đ', 'image/oppo_reno11.webp')">Mua ngay</button>
+                <button class="btn-add-cart" onclick="themvaogio('Oppo Reno11 5G', '8.490.000đ', 'image/oppo_reno11.webp')">Thêm vào giỏ hàng</button>
+            </div>
+
+            <div class="card">
+                <img src="image/vivo-v30.webp" alt="Vivo V30">
+                <h3>Vivo V30 mỏng nhẹ</h3>
+                <p class="rating">⭐⭐⭐⭐⭐ (66 đánh giá)</p>
+                <p class="old">13.990.000đ</p>
+                <p class="new">11.200.000đ</p>
+                <button onclick="muahang('Vivo V30 mỏng nhẹ', '11.200.000đ', 'image/vivo_v30.webp')">Mua ngay</button>
+                <button class="btn-add-cart" onclick="themvaogio('Vivo V30 mỏng nhẹ', '11.200.000đ', 'image/vivo_v30.webp')">Thêm vào giỏ hàng</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<footer>
+    © 2026 LKH STORE - SIÊU PHẨM CÔNG NGHỆ
+</footer>
+
+<a href="lienhe.html" class="contact-float">💬</a>
+
+</body>
+</html>

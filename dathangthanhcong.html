@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<link href="styles/dinhdang11.css" type="text/css" rel="stylesheet">
+	<script src="scripts/taitrangip.js"></script>
+</head>
+
+<body>
+
+<div class="box">
+
+    <h1>✅ Đặt hàng thành công</h1>
+
+    <p>Cảm ơn bạn đã mua hàng tại KHL PHONE STORE</p>
+
+    <img id="hinhsp">
+
+    <h2 id="tensp"></h2>
+
+    <a href="iphone.html">
+        Quay lại trang chủ
+    </a>
+
+</div>
+
+<script>
+
+let ten = localStorage.getItem("tenSP");
+let hinh = localStorage.getItem("hinhSP");
+
+document.getElementById("tensp").innerHTML = ten;
+document.getElementById("hinhsp").src = hinh;
+
+</script>
+
+</body>
+</html>
