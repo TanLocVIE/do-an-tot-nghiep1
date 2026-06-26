@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff3c3c, #ff9800);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Khung chính */
+.success-box {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    width: 350px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    animation: hienlen 0.5s ease;
+}
+
+/* Icon */
+.icon {
+    font-size: 50px;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+/* Tiêu đề */
+.success-box h2 {
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Nội dung */
+.success-box p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Nút */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #d32f2f;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #b71c1c;
+}
+
+/* Animation */
+@keyframes hienlen {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,55 @@
+/* ===== ĐỊNH DẠNG RIÊNG TRANG SẢN PHẨM NỔI BẬT ===== */
+
+/* Hộp tiêu đề trang */
+.page-title-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    margin-bottom: 25px;
+    border-left: 5px solid #d32f2f;
+}
+
+.page-title-box h2 {
+    color: #d32f2f;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.page-title-box p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Đánh giá sao */
+.rating {
+    color: #ff9800;
+    font-size: 13px;
+    margin: 5px 0;
+}
+
+/* Nhãn dán Hot / Bán chạy lên góc ảnh */
+.hot-badge {
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #ff9800;
+    color: white;
+    padding: 4px 8px;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 4px;
+    text-transform: uppercase;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Kích hoạt màu menu bên trái khi đang ở trang đó */
+.menu-left a.active {
+    background: #d32f2f;
+    color: white;
+}

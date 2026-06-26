@@ -1,0 +1,47 @@
+@charset "utf-8";
+body {
+    font-family: Arial;
+    background: #f5f5f5;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.item {
+    background: white;
+    width: 220px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #ccc;
+}
+
+.item img {
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+}
+
+button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: darkred;
+}
+
+.clear {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: black;
+}

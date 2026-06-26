@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    font-family: Arial;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 280px;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #4facfe;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#message {
+    margin-top: 10px;
+    color: red;
+}
